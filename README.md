@@ -95,28 +95,6 @@ curl -X POST https://HTTPS_DOMAIN/search \
 -H "Authorization: Bearer TAVILY_API" \
 -d '{"query": "O que a SPIC Brasil faz?"}'
 
-## 🌐 API Endpoints
-
-### 🔍 POST `/search`
-
-Performs a web search using Tavily and returns results in LangSearch format.
-
-**Headers:**
-
-```
-Authorization: Bearer <TAVILY_API_KEY>
-Content-Type: application/json
-```
-
-**Body:**
-
-```json
-{
-  "query": "example search"
-}
-```
-
----
 
 ### ❤️ GET `/health`
 
