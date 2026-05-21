@@ -67,7 +67,7 @@ server {
 
     listen 443 ssl;
     ssl_certificate /etc/letsencrypt/live/HTTPS_DOMAIN/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/HTTPS DOMAIN/privkey.pem;
+    ssl_certificate_key /etc/letsencrypt/live/HTTPS_DOMAIN/privkey.pem;
 }
 
 sudo ln -s /etc/nginx/sites-available/api /etc/nginx/sites-enabled/
