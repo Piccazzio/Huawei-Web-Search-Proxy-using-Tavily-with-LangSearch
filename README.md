@@ -93,7 +93,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 curl -X POST https://HTTPS_DOMAIN/search \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer TAVILY_API" \
--d '{"query": "Quais são as principais áreas de atuação da SPIC?"}'
+-d '{"query": "Quais são os principais conceitos da Inteligência Artificial?"}'
 
 
 ### ❤️ GET `/health`
