@@ -53,7 +53,7 @@ nano main.py
 
 sudo nano /etc/nginx/sites-available/api
 
-### Copy and paste the following text and change the HTTPS_DOMAIN and the EIP
+### Copy and paste the following text and replace the HTTPS_DOMAIN and the EIP
 
 server {
     server_name HTTPS_DOMAIN;
@@ -80,7 +80,7 @@ sudo systemctl restart nginx
 
 sudo apt install certbot python3-certbot-nginx -y         
 
-### Generate certificate (change the HTTPS_DOMAIN) and then enter an email and accept the instructions
+### Generate certificate (replace the HTTPS_DOMAIN) and then enter an email and accept the instructions
 
 sudo certbot --nginx -d HTTPS_DOMANIN
 
@@ -88,7 +88,7 @@ sudo certbot --nginx -d HTTPS_DOMANIN
 
 uvicorn main:app --host 0.0.0.0 --port 8000 
 
-### Run the following command for testing (change the HTTPS_DOMAIN and enter you TAVILY_API)
+### Run the following command for testing (replace the HTTPS_DOMAIN and enter you TAVILY_API)
 
 curl -X POST https://HTTPS_DOMAIN/search \
 -H "Content-Type: application/json" \
