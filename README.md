@@ -88,7 +88,7 @@ sudo certbot --nginx -d HTTPS_DOMANIN
 
 uvicorn main:app --host 0.0.0.0 --port 8000 
 
-### Run the following command for test (change the HTTPS_DOMAIN and enter you TAVILY_API)
+### Run the following command for testing (change the HTTPS_DOMAIN and enter you TAVILY_API)
 
 curl -X POST https://HTTPS_DOMAIN/search \
 -H "Content-Type: application/json" \
